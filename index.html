@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onLoad="checkIfLoggedIn()">
     <!-- Simple header-->
     <header>
         <img class="imageLogo" src="/images/logo.png" alt="Brukshundklubben officiella loga">
@@ -16,7 +16,7 @@
     </header>
 
 
-    
+
     <div class="card">
         <!-- Login info displays here -->
         <div class="loginInformation">
@@ -25,19 +25,18 @@
 
         <!-- Login card with input form is here-->
         <div class="container">
-            
-                <input type="text" id="usernameInput" placeholder="Användarnamn">
-                <input type="password" id="passwordInput" placeholder="Lösenord">
-                <button onclick="loginAttempt()">Logga in</button>
-            
-
+            <input type="text" id="usernameInput" placeholder="Användarnamn">
+            <input type="password" id="passwordInput" placeholder="Lösenord">
+            <button onclick="loginAttempt()">Logga in</button>
         </div>
+
     </div>
 
 
     <footer>
         Svenska brukshundklubben
     </footer>
+
     <script src="script.js"></script>
 </body>
 
